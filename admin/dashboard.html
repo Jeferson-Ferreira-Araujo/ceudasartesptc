@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - CEU das Artes</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js"></script>
+  <script src="../assets/js/firebase.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">CEU das Artes - Admin</a>
+    <div class="ms-auto">
+      <button id="btnLogout" class="btn btn-outline-secondary btn-sm">Sair</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-4">
+  <h3>Dashboard</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <a class="card p-3 d-block mb-3" href="logo.html"><strong>Logo</strong><div>Trocar logotipo</div></a>
+      <a class="card p-3 d-block mb-3" href="banners.html"><strong>Banners</strong><div>Gerenciar banners do slider</div></a>
+      <a class="card p-3 d-block mb-3" href="equipe.html"><strong>Equipe</strong><div>Gerenciar fotos e textos da equipe</div></a>
+      <a class="card p-3 d-block mb-3" href="galeria.html"><strong>Galeria</strong><div>Upload e paginação</div></a>
+    </div>
+    <div class="col-md-8">
+      <div class="card p-3">
+        <h5>Instruções rápidas</h5>
+        <ol>
+          <li>Cadastre um usuário no Firebase Auth (email/senha) para acessar o painel.</li>
+          <li>Use as páginas específicas para upload de logo, banners, equipe e galeria.</li>
+          <li>Configure a Cloud Function <code>/sendEmail</code> para o formulário de contato.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$("#btnLogout").click(function(){ firebase.auth().signOut().then(()=> window.location='../admin/login.html'); });
+</script>
+</body>
+</html>
