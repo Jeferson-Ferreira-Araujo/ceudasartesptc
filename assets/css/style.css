@@ -1,0 +1,571 @@
+
+
+#bannerContainer .carousel-item img { height: 420px; object-fit: cover; }
+#equipeContainer img { width:120px; height:120px; object-fit:cover; }
+
+/* ---- DESKTOP ---- */
+header {
+    background-color: #292d77;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-logo {
+    width: 980px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botões */
+.header-buttons .btn {
+    font-size: 18px;
+    border-width: 2px;
+    margin: 6px;
+    padding: 10px 24px;
+}
+
+
+/* ---- TABLET ---- */
+@media (max-width: 992px) {
+
+    .header-logo {
+        width: 600px;       /* reduz logo */
+    }
+
+    .header-buttons .btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+
+/* ---- MOBILE ---- */
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    .header-logo {
+        width: 360px;
+    }
+
+    .header-buttons .btn {
+        display: inline-block;
+        width: auto;
+        font-size: 14px;
+        margin: 4px;
+        padding: 6px 16px;
+    }
+}
+
+
+/* ---- MOBILE PEQUENO (CELULARES ANTIGOS) ---- */
+@media (max-width: 480px) {
+
+    .header-logo {
+        width: 260px;
+    }
+
+    .header-buttons .btn {
+        width: 100%;        /* botões em coluna */
+        margin: 6px 0;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+
+/* Container do slide */
+#simpleSlide {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centralizar */
+
+}
+
+/* Wrapper com 90% de largura */
+#simpleSlide .slide-wrapper {
+    width: 100%;
+    max-width: 1400px; /* Limite opcional */
+    background: #fff;  /* Fundo opcional */
+    overflow: hidden; /* Evita bordas irregulares */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Imagem sem cortes e totalmente visível */
+#simpleSlide .slide-image {
+    width: 100%;
+    height: auto; /* Mantém proporção */
+    display: block;
+    object-fit: contain !important; /* NÃO CORTA NADA */
+}
+
+@media (max-width: 768px) {
+    #simpleSlide .slide-wrapper {
+        width: 95%;
+        border-radius: 6px;
+    }
+}
+
+
+#sobre {
+    background: #fff;
+}
+
+.titulo-institucional {
+    font-size: 32px;
+    font-weight: 800;
+    color: #292d77;
+    margin-bottom: 20px;
+}
+
+.texto-institucional {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.frase-final {
+    font-style: italic;
+    font-weight: 600;
+    color: #292d77;
+    margin-top: 20px;
+    border-left: 3px solid #292d77;
+    padding-left: 12px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .titulo-institucional {
+        font-size: 26px;
+    }
+    .texto-institucional {
+        font-size: 16px;
+    }
+}
+
+
+/* Section com fundo chamativo */
+#ctaOficinas {
+    width: 100%;
+    height: 300px;
+    background: url("../img/fundo-oficinas.png");
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay com transparência */
+.cta-overlay {
+    background: rgba(0, 0, 0, 0.45); /* transparência do fundo */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botão */
+.btn-cta {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 14px 38px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Hover bonito */
+.btn-cta:hover {
+    background: #292d77;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #ctaOficinas {
+        height: 220px;
+    }
+    .btn-cta {
+        font-size: 18px;
+        padding: 12px 28px;
+    }
+}
+
+
+/* Wrapper com borda igual da imagem */
+.border-wrapper {
+    border: 2px solid #000;
+}
+
+/* Cada box tem uma borda interna */
+.info-box {
+    border-right: 2px solid #000;
+}
+
+/* Remove a borda da última coluna */
+.info-box:last-child {
+    border-right: none;
+}
+
+#infoCEU h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#infoCEU .icon {
+    font-size: 32px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+
+    .info-box {
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+
+    .info-box:last-child {
+        border-bottom: none;
+    }
+}
+
+
+/* --- CARD DAS OFICINAS --- */
+.oficina-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.oficina-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Ícones grandes e bonitos */
+.oficina-icon {
+    font-size: 38px;
+}
+
+/* Listas mais modernas */
+.oficina-card ul {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.oficina-card li {
+    margin-bottom: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .oficina-card {
+        text-align: center;
+    }
+    .oficina-card ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+}
+
+
+/* --- CARDS DE AGENDA --- */
+
+.agenda-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.agenda-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Imagem do evento */
+.agenda-img {
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Data destacada */
+.agenda-date {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #292d77;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+    .agenda-img {
+        height: 150px;
+    }
+}
+
+
+/* --- CARDS DA BIBLIOTECA --- */
+
+.bib-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.bib-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
+
+.bib-icon {
+    font-size: 40px;
+}
+
+#biblioteca h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* MOBILE AJUSTES */
+@media (max-width: 768px) {
+    .bib-card {
+        padding: 24px;
+    }
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #000;
+}
+
+.team-item {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-item:nth-child(4n) {
+    border-right: none;
+}
+
+.team-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: #e7e7e7;
+    border: 1px solid #ccc;
+}
+
+.team-role {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-item:nth-child(4n) { border-right: 2px solid #000; }
+    .team-item:nth-child(2n) { border-right: none; }
+}
+
+@media (max-width: 576px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .team-item { border-right: none !important; }
+}
+
+
+/* ==== GALERIA MODERNA ==== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px; /* espaçamento entre fotos */
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .gallery-img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-img {
+        height: 120px;
+    }
+}
+
+
+/* ===== RODAPÉ ===== */
+
+#footerCEU {
+    background: #2474b1;
+    color: #fff;
+}
+
+#footerCEU .footer-logo {
+    max-width: 430px;
+}
+
+#footerCEU h5, 
+#footerCEU h6 {
+    color: #fff;
+}
+
+#footerCEU p {
+    color: #d9d9d9;
+}
+
+#footerCEU span {
+    color: #d9d9d9;
+}
+
+.footer-divider {
+    border-color: rgba(255,255,255,0.25);
+}
+
+/* Ícones das redes sociais */
+.footer-social .social-icon {
+    display: inline-block;
+    font-size: 28px;
+    margin: 0 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-social .social-icon:hover {
+    color: #ffdd57;
+    transform: scale(1.15);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #footerCEU {
+        text-align: center;
+    }
+}
+
+
+/* Imagem na seção de contato */
+.contato-img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+    object-fit: cover;
+}
+
+
+/* Mapa lateral */
+.map-container {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.pin-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  background: red;
+  border-radius: 50% 50% 50% 0;
+  transform: translate(-50%, -100%) rotate(-45deg);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.pin-custom::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.btn-enviar {
+  background-color: #2474b1 !important;
+  border-color: #2474b1 !important;
+  color: #fff;
+}
+
+.btn-enviar:hover {
+  background-color: #1f6398 !important;
+  border-color: #1f6398 !important;
+  color: #fff;
+}
