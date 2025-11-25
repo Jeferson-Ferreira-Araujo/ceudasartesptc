@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CEU das Artes - Patrocínio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js"></script>
+  <script src="assets/js/firebase.js"></script>
+</head>
+<body>
+
+<header class="header-banner d-flex flex-column justify-content-center align-items-center text-center">
+
+    <!-- LOGO CENTRAL -->
+    <img id="siteLogo" src="assets/img/logo.png" class="header-logo mb-3">
+
+    <!-- BOTÕES CENTRAIS -->
+    <div class="header-buttons">
+        <a href="#sobre" class="btn btn-outline-light m-1 px-4">Sobre</a>
+        <a href="#oficinas" class="btn btn-outline-light m-1 px-4">Oficinas</a>
+        <a href="#agenda" class="btn btn-outline-light m-1 px-4">Agenda</a>
+        <a href="#biblioteca" class="btn btn-outline-light m-1 px-4">Biblioteca</a>
+        <a href="#equipe" class="btn btn-outline-light m-1 px-4">Equipe</a>
+        <a href="#contato" class="btn btn-outline-light m-1 px-4">Contato</a>
+        <a href="#galeria" class="btn btn-outline-light m-1 px-4">Galeria</a>
+    </div>
+
+</header>
+
+<section id="simpleSlide">
+    <div class="slide-wrapper">
+        <img src="assets/img/placeholder-slide.png" alt="Slide" class="slide-image">
+    </div>
+</section>
+
+<section id="" class="py-5">
+    <div class="container">
+        
+        <h2 class="titulo-institucional">
+            Arte, Cultura e Esporte que movem a cidade
+        </h2>
+
+        <p class="texto-institucional">
+            O Centro de Artes e Esportes Unificados (CEU das Artes) é um espaço público e gratuito que 
+            promove o encontro entre pessoas, saberes e expressões culturais. Aqui, a arte, o esporte
+            e a cidadania caminham lado a lado, fortalecendo a comunidade e inspirando sonhos.
+        </p>
+
+        <p class="texto-institucional">
+            Nosso compromisso é proporcionar experiências transformadoras por meio de oficinas, 
+            apresentações, ações sociais e atividades que valorizam o talento local e a convivência coletiva.
+        </p>
+
+        <p class="texto-institucional frase-final">
+            “Mais que um espaço físico, o CEU das Artes é um lugar de pertencimento, aprendizado e 
+            novas oportunidades.”
+        </p>
+
+    </div>
+</section>
+
+<section id="ctaOficinas">
+    <div class="cta-overlay">
+        <a href="#oficinas" class="btn btn-light btn-cta">Ver Oficinas</a>
+    </div>
+</section>
+
+<section id="sobre" class="py-5">
+  <div class="container">
+      
+      <h2 class="mb-3">Sobre o CEU das Artes</h2>
+
+      <p class="mb-4">
+        Localizado na R. Elmiro Alves do Nascimento, 1015 – Marciano Brandão, Patrocínio/MG,
+        o CEU das Artes integra equipamentos culturais, esportivos e de cidadania. Atendemos
+        gratuitamente a comunidade com oficinas, apresentações, empréstimo de livros e ações formativas.
+      </p>
+
+      <div class="row g-0 border-wrapper">
+
+          <!-- Item 1 -->
+          <div class="col-md-4 p-4 info-box">
+              <div class="icon mb-2">👥</div>
+              <h5><strong>Acesso gratuito</strong></h5>
+              <p>Inscrições abertas periodicamente para todas as idades, com foco em inclusão e diversidade.</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-md-4 p-4 info-box">
+              <div class="icon mb-2">📚</div>
+              <h5><strong>Agenda cultural</strong></h5>
+              <p>Mostras, recitais, apresentações de fim de ano e ações na praça e em escolas.</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-md-4 p-4 info-box">
+              <div class="icon mb-2">📖</div>
+              <h5><strong>Biblioteca</strong></h5>
+              <p>Acervo aproximado de 7 mil livros, com leitura no local, empréstimo e contação de histórias.</p>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+
+
+<section id="oficinas" class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="text-center mb-4">Oficinas</h2>
+    <p class="text-center mb-5 text-muted">Atividades gratuitas oferecidas pelo CEU das Artes</p>
+
+    <div class="row g-4">
+
+      <!-- DANÇA -->
+      <div class="col-md-4 col-lg-3">
+        <div class="oficina-card p-4 h-100">
+          <div class="oficina-icon">💃</div>
+          <h5 class="fw-bold mt-2">Dança</h5>
+          <ul>
+            <li>Jazz Ballet</li>
+            <li>Jazz Contemporâneo</li>
+            <li>Ballet Contemporâneo</li>
+            <li>Ballet Baby</li>
+            <li>Dança do Ventre</li>
+            <li>Dança de Salão</li>
+            <li>Hip Hop</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ARTESANATO -->
+      <div class="col-md-4 col-lg-3">
+        <div class="oficina-card p-4 h-100">
+          <div class="oficina-icon">🧶</div>
+          <h5 class="fw-bold mt-2">Artesanato</h5>
+          <ul>
+            <li>Crochê</li>
+            <li>Tear Manual</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ARTES VISUAIS -->
+      <div class="col-md-4 col-lg-3">
+        <div class="oficina-card p-4 h-100">
+          <div class="oficina-icon">🎨</div>
+          <h5 class="fw-bold mt-2">Artes Visuais</h5>
+          <ul>
+            <li>Pintura em Tecido</li>
+            <li>Desenho Infanto-juvenil</li>
+            <li>Desenho Adulto</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MÚSICA -->
+      <div class="col-md-4 col-lg-3">
+        <div class="oficina-card p-4 h-100">
+          <div class="oficina-icon">🎵</div>
+          <h5 class="fw-bold mt-2">Música</h5>
+          <ul>
+            <li>Violão Iniciante</li>
+            <li>Violão Intermediário</li>
+            <li>Musicalização para Crianças Neuro Divergentes</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TEATRO & CIRCO -->
+      <div class="col-md-4 col-lg-3">
+        <div class="oficina-card p-4 h-100">
+          <div class="oficina-icon">🎭</div>
+          <h5 class="fw-bold mt-2">Teatro & Circo</h5>
+          <ul>
+            <li>Teatro</li>
+            <li>Circo</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ATIVIDADES CORPORAIS -->
+      <div class="col-md-4 col-lg-3">
+        <div class="oficina-card p-4 h-100">
+          <div class="oficina-icon">🧘</div>
+          <h5 class="fw-bold mt-2">Atividades Corporais</h5>
+          <ul>
+            <li>Pilates Solo, Alongamento e Condicionamento <br><small>(personalizar)</small></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="agenda" class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="text-center mb-4">Agenda</h2>
+    <p class="text-center text-muted mb-5">Fique por dentro dos próximos eventos, oficinas e apresentações do CEU das Artes</p>
+
+    <div class="row g-4">
+
+      <!-- ITEM 1 -->
+      <div class="col-md-4">
+        <div class="agenda-card p-3">
+          <div class="agenda-img" style="background-image: url('assets/img/evento.jpg');"></div>
+
+          <div class="agenda-date">15 MAR</div>
+
+          <h5 class="mt-3 fw-bold">Apresentação de Jazz Ballet</h5>
+          <p class="text-muted small">Auditório do CEU das Artes • 19h</p>
+          <p>Espetáculo de encerramento das turmas de Jazz Ballet Juvenil.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="col-md-4">
+        <div class="agenda-card p-3">
+          <div class="agenda-img" style="background-image: url('assets/img/evento.jpg');"></div>
+
+          <div class="agenda-date">22 MAR</div>
+
+          <h5 class="mt-3 fw-bold">Mostra de Artes Visuais</h5>
+          <p class="text-muted small">Hall Principal • 16h</p>
+          <p>Exposição coletiva com obras produzidas nas oficinas de Pintura e Desenho.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="col-md-4">
+        <div class="agenda-card p-3">
+          <div class="agenda-img" style="background-image: url('assets/img/evento.jpg');"></div>
+
+          <div class="agenda-date">05 ABR</div>
+
+          <h5 class="mt-3 fw-bold">Roda de Violão</h5>
+          <p class="text-muted small">Área Externa • 18h</p>
+          <p>Apresentação aberta das turmas de Violão Iniciante e Intermediário.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="biblioteca" class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="text-center mb-4">Biblioteca CEU das Artes</h2>
+
+    <p class="text-center mb-5">
+      Serviços: empréstimo, leitura local, contação de histórias e oficinas de mediação de leitura.  
+      Educação para a cidadania informacional e apoio a projetos culturais.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- HORÁRIO -->
+      <div class="col-md-4">
+        <div class="bib-card p-4">
+          <div class="bib-icon mb-3">⏰</div>
+          <h5 class="fw-bold">Horário de Atendimento</h5>
+          <p class="mb-0">Seg–Sex</p>
+          <p class="mb-0">8h às 20h</p>
+        </div>
+      </div>
+
+      <!-- ACERVO -->
+      <div class="col-md-4">
+        <div class="bib-card p-4">
+          <div class="bib-icon mb-3">📚</div>
+          <h5 class="fw-bold">Acervo</h5>
+          <p class="mb-0">≈ 7.000 livros</p>
+          <p class="mb-0">HQs, infantojuvenil e múltiplas áreas</p>
+        </div>
+      </div>
+
+      <!-- CADASTRO -->
+      <div class="col-md-4">
+        <div class="bib-card p-4">
+          <div class="bib-icon mb-3">🪪</div>
+          <h5 class="fw-bold">Cadastro</h5>
+          <p class="mb-0">Trazer documento com foto</p>
+          <p class="mb-0">e comprovante simples de contato</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="equipe" class="py-5">
+  <div class="container">
+
+    <h2 class="mb-2">Equipe</h2>
+    <p class="text-muted mb-4">
+      Coordenação geral, professores e equipe administrativa dedicados ao atendimento da comunidade.
+    </p>
+
+    <div class="team-grid">
+
+      <!-- Exemplo de item -->
+      <div class="team-item">
+        <img src="assets/img/placeholder-user.jpg" class="team-photo">
+        <h5 class="team-role">Coordenador Geral</h5>
+      </div>
+
+      <div class="team-item">
+        <img src="assets/img/placeholder-user.jpg" class="team-photo">
+        <h5 class="team-role">Coordenadora Pedagógica</h5>
+      </div>
+
+      <div class="team-item">
+        <img src="assets/img/placeholder-user.jpg" class="team-photo">
+        <h5 class="team-role">Supervisor</h5>
+      </div>
+
+      <div class="team-item">
+        <img src="assets/img/placeholder-user.jpg" class="team-photo">
+        <h5 class="team-role">Auxiliar Administrativo</h5>
+      </div>
+
+      <!-- Continue conforme a lista -->
+    </div>
+
+  </div>
+</section>
+
+
+<section id="galeria" class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="mb-4">Galeria de Fotos</h2>
+
+    <div class="gallery-grid">
+
+      <!-- Exemplo de itens (depois substitui pelo Firebase) -->
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/placeholder-galeria.png" class="gallery-img">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contato" class="py-5">
+  <div class="container">
+
+    <h2 class="mb-4">Contato</h2>
+
+    <div class="row align-items-center">
+
+      <!-- COLUNA DO FORMULÁRIO -->
+      <div class="col-md-6">
+        <form id="formContato">
+          <input class="form-control mb-3" name="nome" placeholder="Nome" required>
+          <input class="form-control mb-3" type="email" name="email" placeholder="E-mail" required>
+          <textarea class="form-control mb-3" name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+          <button class="btn btn-enviar w-100">Enviar</button>
+        </form>
+
+        <p id="contatoStatus" class="mt-3"></p>
+      </div>
+
+      <!-- COLUNA DO MAPA -->
+      <div class="col-md-6">
+  <div class="map-wrapper">
+    <div class="pin-custom"></div>
+
+    <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.9398935407783!2d-46.99989742400788!3d-18.93280328455608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ae3d7047873039%3A0xa02bc42996746644!2sR.%20Elmiro%20Alves%20do%20Nascimento%2C%201015%20-%20Marciano%20Brandão%2C%20Patroc%C3%ADnio%20-%20MG%2C%2038740-038!5e0!3m2!1spt-BR!2sbr!4v1732575200000!5m2!1spt-BR!2sbr"
+  width="100%"
+  height="350"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer id="footerCEU" class="py-5">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- LOGO / IDENTIDADE -->
+      <div class="col-md-4 text-center text-md-start">
+        <img src="assets/img/rodape.jpeg" alt="Logo CEU das Artes" class="footer-logo mb-3">
+      </div>
+
+      <!-- REDES SOCIAIS -->
+<div class="col-md-4 text-center">
+  <h5 class="fw-bold mb-3">Siga o CEU das Artes</h5>
+
+  <div class="footer-social">
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/ceudasartes.patrocinio" 
+       target="_blank" 
+       class="social-icon" 
+       title="Instagram">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/553498012607"
+       target="_blank"
+       class="social-icon"
+       title="WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- E-mail -->
+    <a href="mailto:cultura@patrocinio.mg.gov.br" 
+       class="social-icon"
+       title="E-mail">
+      <i class="bi bi-envelope-fill"></i>
+    </a>
+
+  </div>
+</div>
+
+
+      <!-- ENDEREÇO / HORÁRIOS -->
+      <div class="col-md-4 text-center text-md-end">
+        <h5 class="fw-bold mb-3">Endereço</h5>
+        <p class="mb-1">R. Elmiro Alves do Nascimento, 1015</p>
+        <p class="mb-1">Bairro Marciano Brandão</p>
+        <p class="mb-1">Patrocínio/MG – 38740-038</p>
+
+        <h6 class="fw-bold mt-3 mb-1">Atendimento</h6>
+        <p class="mb-0">Seg–Sex · 08h às 20h</p>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
