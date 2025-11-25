@@ -29,7 +29,7 @@ header {
 @media (max-width: 992px) {
 
     .header-logo {
-        width: 600px;       /* reduz logo */
+        width: 100%;       /* reduz logo */
     }
 
     .header-buttons .btn {
@@ -47,7 +47,7 @@ header {
     }
 
     .header-logo {
-        width: 1360px;
+        width: 100%;
     }
 
     .header-buttons .btn {
