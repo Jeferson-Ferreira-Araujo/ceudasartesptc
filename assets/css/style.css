@@ -64,7 +64,7 @@ header {
 @media (max-width: 480px) {
 
     .header-logo {
-        width: 260px;
+        width: 100%;
     }
 
     .header-buttons .btn {
